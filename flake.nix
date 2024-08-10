@@ -20,6 +20,7 @@
       plugins = import ./configs/plugins.nix;
       opts = import ./configs/opts.nix;
       keymaps = import ./configs/keymaps.nix;
+      autoCmd = import ./configs/autocommands.nix;
     };
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
