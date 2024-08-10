@@ -11,12 +11,20 @@
     config = {
       colorschemes.nord.enable = true;
 
+      clipboard.register = "unnamedplus";
+
+      opts = import ./configs/opts.nix;
+
       globals.mapleader = " ";
+      extraConfigVim = ''
+       map \ <leader>
+      '';
 
       keymaps = [
 	{
+	  mode = "n";
 	  key = "<leader>q";
-	  action = ":q!";
+	  action = ":q!<cr>";
 	  options = { silent = true; };
 	}
       ];
