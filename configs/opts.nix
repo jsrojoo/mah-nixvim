@@ -1,6 +1,8 @@
 {
   backup = false;
+  clipboard = "unnamedplus";
   colorcolumn = "80";
+  completeopt = "menuone,noinsert,noselect";
   cursorcolumn = true;
   cursorline = true;
   expandtab = true;
@@ -13,6 +15,7 @@
   laststatus = 3;
   lazyredraw = true;
   linebreak = true;
+  mouse = "a";
   number = true;
   relativenumber = true;
   scrolloff = 999;
