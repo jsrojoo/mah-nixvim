@@ -22,7 +22,7 @@
   lsp-lines.enable = true;
   lsp.enable = true;
   lsp.servers = {
-    css.enable = true;
+    cssls.enable = true;
     docker-compose-language-service.enable = true;
     dockerls.enable = true;
     emmet-ls.enable = true;
