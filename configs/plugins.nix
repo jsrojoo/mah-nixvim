@@ -27,7 +27,6 @@
     dockerls.enable = true;
     emmet-ls.enable = true;
     eslint.enable = true;
-    eslint.enable = true;
     helm-ls.enable = true;
     html.enable = true;
     jsonls.enable = true;
