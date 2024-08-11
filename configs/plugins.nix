@@ -21,7 +21,25 @@
   lsp-format.enable = true;
   lsp-lines.enable = true;
   lsp.enable = true;
-  lsp.servers.eslint.enable = true;
+  lsp.servers = {
+    css.enable = true;
+    docker-compose-language-service.enable = true;
+    dockerls.enable = true;
+    emmet-ls.enable = true;
+    eslint.enable = true;
+    eslint.enable = true;
+    helm-ls.enable = true;
+    html.enable = true;
+    jsonls.enable = true;
+    lua-ls.enable = true;
+    nixd.enable = true;
+    pylyzer.enable = true;
+    ruff-lsp.enable = true;
+    ruff.enable = true;
+    sqls.enable = true;
+    tsserver.enable = true;
+    yamlls.enable = true;
+  };
   luasnip.enable = true;
   markdown-preview.enable = true;
   nix.enable = true;
