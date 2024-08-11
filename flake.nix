@@ -19,7 +19,7 @@
 
       plugins = import ./configs/plugins.nix;
       opts = import ./configs/opts.nix;
-      keymaps = import ./configs/keymaps.nix;
+      inherit (import ./configs/keymaps.nix) keymaps;
       autoCmd = import ./configs/autocommands.nix;
     };
   in

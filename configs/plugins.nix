@@ -22,26 +22,13 @@
   indent-o-matic.enable = true;
   jupytext.enable = true;
   lsp-format.enable = true;
-  lsp-lines.enable = true;
-  lsp.enable = true;
-  lsp.servers = {
-    cssls.enable = true;
-    docker-compose-language-service.enable = true;
-    dockerls.enable = true;
-    emmet-ls.enable = true;
-    eslint.enable = true;
-    helm-ls.enable = true;
-    html.enable = true;
-    jsonls.enable = true;
-    lua-ls.enable = true;
-    nixd.enable = true;
-    pylyzer.enable = true;
-    ruff-lsp.enable = true;
-    ruff.enable = true;
-    sqls.enable = true;
-    tsserver.enable = true;
-    yamlls.enable = true;
+  packer = {
+    enable = true;
+    plugins = [
+      "dgagn/diagflow.nvim"
+    ];
   };
+  lsp = import ./lsp.nix;
   luasnip.enable = true;
   markdown-preview.enable = true;
   nix.enable = true;
