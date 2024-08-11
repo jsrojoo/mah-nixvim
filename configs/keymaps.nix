@@ -37,7 +37,7 @@
     }
     {
       action = ":FzfLua buffers<cr>";
-      key = "<leader><leader>";
+      key = "<leader><space>";
       options = {
         silent = true;
       };

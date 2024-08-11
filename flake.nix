@@ -9,9 +9,8 @@
     flake-parts,
   } @ inputs: let
     config = {
-      globals.mapleader = " ";
       extraConfigVim = ''
-        map \ <leader>
+        map <space> <leader>
       '';
 
       colorschemes.nord.enable = true;
