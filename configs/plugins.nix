@@ -6,6 +6,10 @@
   cmp_luasnip.enable = true;
   comment.enable = true;
   conform-nvim = import ./plugins/conform-nvim.nix;
+  coverage.enable = true;
+  dap.enable = true;
+  dap.extensions.dap-python.enable = true;
+  firenvim.enable = true;
   friendly-snippets.enable = true;
   fugitive.enable = true;
   fzf-lua.enable = true;
@@ -13,10 +17,13 @@
   guess-indent.enable = true;
   indent-blankline.enable = true;
   indent-o-matic.enable = true;
+  jupytext.enable = true;
   lsp-format.enable = true;
   lsp-lines.enable = true;
   lsp.enable = true;
+  lsp.servers.eslint.enable = true;
   luasnip.enable = true;
+  markdown-preview.enable = true;
   nix.enable = true;
   none-ls = import ./plugins/none-ls.nix;
   nvim-autopairs.enable = true;
@@ -26,4 +33,7 @@
   treesitter-refactor.enable = true;
   treesitter-textobjects.enable = true;
   treesitter.enable = true;
+  ts-autotag.enable = true;
+  ts-context-commentstring.enable = true;
+  typescript-tools.enable = true;
 }
