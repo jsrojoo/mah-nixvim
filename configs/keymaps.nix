@@ -1,6 +1,6 @@
 [
   {
-    action = ":qa!<cr>";
+    action = ":q!<cr>";
     key = "<leader>q";
     options = {
       silent = true;
