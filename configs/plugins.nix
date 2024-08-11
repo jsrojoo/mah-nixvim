@@ -17,8 +17,9 @@
   lsp.enable = true;
   luasnip.enable = true;
   nix.enable = true;
-  surround.enable = true;
+  none-ls = import ./plugins/none-ls.nix;
   nvim-autopairs.enable = true;
+  surround.enable = true;
   tmux-navigator.enable = true;
   treesitter-context.enable = true;
   treesitter-refactor.enable = true;

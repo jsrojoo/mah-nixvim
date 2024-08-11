@@ -83,4 +83,16 @@
       silent = true;
     };
   }
+  {
+    mode = [
+      "n"
+      "v"
+    ];
+    key = "<leader>fd";
+    action = "<cmd>lua vim.lsp.buf.format()<cr>";
+    options = {
+      silent = true;
+      desc = "Format";
+    };
+  }
 ]
