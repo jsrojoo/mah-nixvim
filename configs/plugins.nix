@@ -5,6 +5,7 @@
   cmp-path.enable = true;
   cmp_luasnip.enable = true;
   comment.enable = true;
+  conform-nvim = import ./plugins/conform-nvim.nix;
   friendly-snippets.enable = true;
   fugitive.enable = true;
   fzf-lua.enable = true;
