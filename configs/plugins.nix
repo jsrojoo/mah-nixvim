@@ -1,5 +1,8 @@
 {
   cmp = import ./cmp.nix;
+  endwise.enable = true;
+  flash.enable = true;
+  gitblame.enable = true;
   cmp-buffer.enable = true;
   cmp-nvim-lsp.enable = true;
   cmp-path.enable = true;

@@ -63,6 +63,13 @@
     };
   }
   {
+    action = ":FzfLua keymaps<cr>";
+    key = "<leader>fk";
+    options = {
+      silent = true;
+    };
+  }
+  {
     action = ":";
     key = ";";
     options = {
@@ -84,10 +91,7 @@
     };
   }
   {
-    mode = [
-      "n"
-      "v"
-    ];
+    mode = ["n" "v"];
     key = "<leader>fd";
     action = "<cmd>lua vim.lsp.buf.format()<cr>";
     options = {
