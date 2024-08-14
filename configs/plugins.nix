@@ -13,7 +13,7 @@
   # dap.enable = true;
   # dap.extensions.dap-python.enable = true;
   # firenvim.enable = true;
-  # friendly-snippets.enable = true;
+  friendly-snippets.enable = true;
   fugitive.enable = true;
   fzf-lua.enable = true;
   gitsigns.enable = true;
@@ -21,7 +21,7 @@
   indent-blankline.enable = true;
   indent-o-matic.enable = true;
   # # jupytext.enable = true;
-  lsp-format.enable = true;
+  # lsp-format.enable = true;
   # packer = {
   #   enable = true;
   #   # plugins = [
@@ -29,10 +29,10 @@
   #   # ];
   # };
   lsp = import ./lsp.nix;
-  # luasnip.enable = true;
+  luasnip.enable = true;
   # markdown-preview.enable = true;
   nix.enable = true;
-  # # none-ls = import ./plugins/none-ls.nix;
+  # none-ls = import ./plugins/none-ls.nix;
   # nvim-autopairs.enable = true;
   # surround.enable = true;
   # tmux-navigator.enable = true;
