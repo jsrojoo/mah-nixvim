@@ -28,7 +28,7 @@
   #   #   "dgagn/diagflow.nvim"
   #   # ];
   # };
-  # lsp = import ./lsp.nix;
+  lsp = import ./lsp.nix;
   # luasnip.enable = true;
   # markdown-preview.enable = true;
   nix.enable = true;
