@@ -24,9 +24,9 @@
   lsp-format.enable = true;
   packer = {
     enable = true;
-    plugins = [
-      "dgagn/diagflow.nvim"
-    ];
+    # plugins = [
+    #   "dgagn/diagflow.nvim"
+    # ];
   };
   lsp = import ./lsp.nix;
   luasnip.enable = true;

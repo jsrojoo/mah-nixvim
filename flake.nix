@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "Mah nixvim configuration";
 
   inputs.nixvim.url = "github:nix-community/nixvim";
 
@@ -12,6 +12,8 @@
       extraConfigVim = ''
         map <space> <leader>
       '';
+
+      extraConfigLua = builtins.readFile ./lua-config.lua;
 
       colorschemes.nord.enable = true;
       clipboard.register = "unnamedplus";
