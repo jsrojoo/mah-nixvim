@@ -10,8 +10,8 @@
       statix.enable = true;
     };
     diagnostics = {
-      statix.enable = true;
-      yamllint.enable = true;
+      statix.enable = false;
+      yamllint.enable = false;
     };
     formatting = {
       alejandra.enable = true;
