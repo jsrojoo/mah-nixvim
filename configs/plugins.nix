@@ -31,7 +31,7 @@
   # lsp = import ./lsp.nix;
   # luasnip.enable = true;
   # markdown-preview.enable = true;
-  # nix.enable = true;
+  nix.enable = true;
   # # none-ls = import ./plugins/none-ls.nix;
   # nvim-autopairs.enable = true;
   # surround.enable = true;
