@@ -21,7 +21,7 @@
   indent-blankline.enable = true;
   indent-o-matic.enable = true;
   # # jupytext.enable = true;
-  lsp-format.enable = true;
+  # lsp-format.enable = true;
   # packer = {
   #   enable = true;
   #   # plugins = [
