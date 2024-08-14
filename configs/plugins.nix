@@ -8,7 +8,7 @@
   cmp-path.enable = true;
   cmp_luasnip.enable = true;
   comment.enable = true;
-  # conform-nvim = import ./plugins/conform-nvim.nix;
+  conform-nvim = import ./plugins/conform-nvim.nix;
   coverage.enable = true;
   # dap.enable = true;
   # dap.extensions.dap-python.enable = true;

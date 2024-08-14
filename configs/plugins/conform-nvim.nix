@@ -1,9 +1,6 @@
 {
   enable = true;
-  formatOnSave = {
-    lspFallback = true;
-    timeoutMs = 500;
-  };
+  formatOnSave = {};
   notifyOnError = true;
   formattersByFt = {
     liquidsoap = ["liquidsoap-prettier"];
