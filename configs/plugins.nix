@@ -2,7 +2,7 @@
   cmp = import ./cmp.nix;
   endwise.enable = true;
   flash.enable = true;
-  gitblame.enable = true;
+  # gitblame.enable = true;
   cmp-buffer.enable = true;
   cmp-nvim-lsp.enable = true;
   cmp-path.enable = true;
@@ -20,7 +20,7 @@
   guess-indent.enable = true;
   indent-blankline.enable = true;
   indent-o-matic.enable = true;
-  jupytext.enable = true;
+  # jupytext.enable = true;
   lsp-format.enable = true;
   packer = {
     enable = true;
@@ -36,7 +36,7 @@
   nvim-autopairs.enable = true;
   surround.enable = true;
   tmux-navigator.enable = true;
-  treesitter-context.enable = true;
+  # treesitter-context.enable = true;
   treesitter-refactor.enable = true;
   treesitter-textobjects.enable = true;
   treesitter.enable = true;
