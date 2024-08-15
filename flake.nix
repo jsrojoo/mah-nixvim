@@ -9,11 +9,8 @@
     flake-parts,
   } @ inputs: let
     config = {
-      extraConfigVim = ''
-        map <space> <leader>
-      '';
-
-      extraConfigLua = builtins.readFile ./lua-config.lua;
+      extraConfigVim = builtins.readFile ./configs/vimrc;
+      extraConfigLua = builtins.readFile ./configs/init.lua;
 
       colorschemes.nord.enable = true;
       clipboard.register = "unnamedplus";
