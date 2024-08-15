@@ -1,5 +1,5 @@
-{
-  keymaps = [
+let
+  core = [
     {
       action = ":q!<cr>";
       key = "<leader>q";
@@ -14,6 +14,47 @@
         silent = true;
       };
     }
+    {
+      action = ":";
+      key = ";";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = ":set foldmethod=expr<cr>";
+      key = "<leader>fs";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = ":set foldmethod=indent<cr>";
+      key = "<leader>fi";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      mode = ["n" "v"];
+      key = "<leader>fd";
+      action = "<cmd>lua vim.lsp.buf.format()<cr>";
+      options = {
+        silent = true;
+        desc = "Format";
+      };
+    }
+    {
+      mode = ["n" "x" "o"];
+      key = "s";
+      action = "<cmd>lua require('flash').jump()<cr>";
+      options = {
+        silent = true;
+        desc = "Flash";
+      };
+    }
+  ];
+  fzf = [
     {
       action = ":FzfLua files<cr>";
       key = "<leader>fa";
@@ -70,47 +111,55 @@
         silent = true;
       };
     }
+  ];
+  git_signs = [
     {
-      action = ":";
-      key = ";";
+      action = ":Gitsigns next_hunk";
+      key = "<leader>hn";
       options = {
         silent = true;
       };
     }
     {
-      action = ":set foldmethod=expr<cr>";
-      key = "<leader>fs";
+      action = ":Gitsigns prev_hunk";
+      key = "<leader>hn";
       options = {
         silent = true;
       };
     }
     {
-      action = ":set foldmethod=indent<cr>";
-      key = "<leader>fi";
+      action = ":Gitsigns stage_hunk";
+      key = "<leader>hs";
       options = {
         silent = true;
       };
     }
     {
-      mode = ["n" "v"];
-      key = "<leader>fd";
-      action = "<cmd>lua vim.lsp.buf.format()<cr>";
+      action = ":Gitsigns undo_stage_hunk";
+      key = "<leader>hu";
       options = {
         silent = true;
-        desc = "Format";
       };
     }
-
     {
-      mode = ["n" "x" "o"];
-      key = "s";
-      action = "<cmd>lua require('flash').jump()<cr>";
+      action = ":Gitsigns reset_hunk";
+      key = "<leader>hr";
       options = {
         silent = true;
-        desc = "Flash";
+      };
+    }
+    {
+      action = ":Gitsigns toggle_current_line_blame";
+      key = "<leader>tb";
+      options = {
+        silent = true;
       };
     }
   ];
+in {
+  keymaps = core
+  ++ fzf
+  ++ git_signs;
 
   lsp = {
     silent = true;
