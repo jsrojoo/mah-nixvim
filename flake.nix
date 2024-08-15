@@ -1,16 +1,36 @@
 {
   description = "Mah nixvim configuration";
 
-  inputs.nixvim.url = "github:nix-community/nixvim";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
 
   outputs = {
     self,
-    nixvim,
+    nixpkgs,
     flake-parts,
+    nixvim,
   } @ inputs: let
-    config = {
+    mkConfig = { pkgs, ... }: {
       extraConfigVim = builtins.readFile ./configs/vimrc;
       extraConfigLua = builtins.readFile ./configs/init.lua;
+      extraPlugins = [
+        (pkgs.vimUtils.buildVimPlugin {
+          pname = "vim-dadbod";
+          "version" = "v1.4";
+          src = pkgs.fetchFromGitHub {
+            owner = "tpope";
+            repo = "vim-dadbod";
+            rev = "v1.4";
+            hash = "sha256-45l2cHoM5AvYx5ZQkDPjDduwU2nDS4VHfLmUkrbfMFg=";
+          };
+        })
+      ];
 
       colorschemes.nord.enable = true;
       clipboard.register = "unnamedplus";
@@ -35,7 +55,7 @@
         ...
       }: let
         nixvim' = nixvim.legacyPackages."${system}";
-        nvim = nixvim'.makeNixvim config;
+        nvim = nixvim'.makeNixvim (mkConfig { inherit pkgs; });
       in {
         packages = {
           inherit nvim;
