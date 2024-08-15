@@ -24,7 +24,8 @@
   packer = {
     enable = true;
     plugins = [
-      # "dgagn/diagflow.nvim"
+      "dgagn/diagflow.nvim"
+      "samjwill/nvim-unception"
       "tpope/vim-dadbod"
       "kristijanhusak/vim-dadbod-ui"
       "kristijanhusak/vim-dadbod-completion"
