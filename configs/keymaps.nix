@@ -114,14 +114,14 @@ let
   ];
   git_signs = [
     {
-      action = ":Gitsigns next_hunk<cr>";
+      action = ":Gitsigns next_hunk<cr>:Gitsigns preview_hunk<cr>";
       key = "<leader>hn";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns prev_hunk<cr>";
+      action = ":Gitsigns prev_hunk<cr>:Gitsigns preview_hunk<cr>";
       key = "<leader>hp";
       options = {
         silent = true;
