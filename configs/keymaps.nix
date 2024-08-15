@@ -156,9 +156,27 @@ let
       };
     }
   ];
+
+  fugitive = [
+    {
+      action = ":G status<cr>";
+      key = "<leader>gs";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = ":G commit --amend";
+      key = "<leader>gca";
+      options = {
+        silent = true;
+      };
+    }
+  ];
 in {
   keymaps = core
   ++ fzf
+  ++ fugitive
   ++ git_signs;
 
   lsp = {
