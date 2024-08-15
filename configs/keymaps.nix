@@ -122,7 +122,7 @@ let
     }
     {
       action = ":Gitsigns prev_hunk<cr>";
-      key = "<leader>hn";
+      key = "<leader>hp";
       options = {
         silent = true;
       };
