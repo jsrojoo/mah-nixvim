@@ -21,12 +21,15 @@
   indent-o-matic.enable = true;
   # # jupytext.enable = true;
   # lsp-format.enable = true;
-  # packer = {
-  #   enable = true;
-  #   # plugins = [
-  #   #   "dgagn/diagflow.nvim"
-  #   # ];
-  # };
+  packer = {
+    enable = true;
+    plugins = [
+      # "dgagn/diagflow.nvim"
+      "tpope/vim-dadbod"
+      "kristijanhusak/vim-dadbod-ui"
+      "kristijanhusak/vim-dadbod-completion"
+    ];
+  };
   lsp = import ./lsp.nix;
   luasnip.enable = true;
   # markdown-preview.enable = true;

@@ -19,18 +19,18 @@
     mkConfig = { pkgs, ... }: {
       extraConfigVim = builtins.readFile ./configs/vimrc;
       extraConfigLua = builtins.readFile ./configs/init.lua;
-      extraPlugins = [
-        (pkgs.vimUtils.buildVimPlugin {
-          pname = "vim-dadbod";
-          "version" = "v1.4";
-          src = pkgs.fetchFromGitHub {
-            owner = "tpope";
-            repo = "vim-dadbod";
-            rev = "v1.4";
-            hash = "sha256-45l2cHoM5AvYx5ZQkDPjDduwU2nDS4VHfLmUkrbfMFg=";
-          };
-        })
-      ];
+      # extraPlugins = [
+      #   (pkgs.vimUtils.buildVimPlugin {
+      #     pname = "vim-dadbod";
+      #     "version" = "v1.4";
+      #     src = pkgs.fetchFromGitHub {
+      #       owner = "tpope";
+      #       repo = "vim-dadbod";
+      #       rev = "v1.4";
+      #       hash = "sha256-45l2cHoM5AvYx5ZQkDPjDduwU2nDS4VHfLmUkrbfMFg=";
+      #     };
+      #   })
+      # ];
 
       colorschemes.nord.enable = true;
       clipboard.register = "unnamedplus";
