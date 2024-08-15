@@ -114,42 +114,42 @@ let
   ];
   git_signs = [
     {
-      action = ":Gitsigns next_hunk";
+      action = ":Gitsigns next_hunk<cr>";
       key = "<leader>hn";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns prev_hunk";
+      action = ":Gitsigns prev_hunk<cr>";
       key = "<leader>hn";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns stage_hunk";
+      action = ":Gitsigns stage_hunk<cr>";
       key = "<leader>hs";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns undo_stage_hunk";
+      action = ":Gitsigns undo_stage_hunk<cr>";
       key = "<leader>hu";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns reset_hunk";
+      action = ":Gitsigns reset_hunk<cr>";
       key = "<leader>hr";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns toggle_current_line_blame";
+      action = ":Gitsigns toggle_current_line_blame<cr>";
       key = "<leader>tb";
       options = {
         silent = true;
