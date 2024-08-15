@@ -159,7 +159,7 @@ let
 
   fugitive = [
     {
-      action = ":G status<cr>";
+      action = ":G<cr>";
       key = "<leader>gs";
       options = {
         silent = true;
