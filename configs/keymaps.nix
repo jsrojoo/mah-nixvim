@@ -166,6 +166,13 @@ let
       };
     }
     {
+      action = ":G commit<cr>";
+      key = "<leader>gcm";
+      options = {
+        silent = true;
+      };
+    }
+    {
       action = ":G commit --amend";
       key = "<leader>gca";
       options = {
