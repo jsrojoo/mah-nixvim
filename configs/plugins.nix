@@ -32,13 +32,13 @@
   # markdown-preview.enable = true;
   nix.enable = true;
   # none-ls = import ./plugins/none-ls.nix;
-  # nvim-autopairs.enable = true;
-  # surround.enable = true;
-  # tmux-navigator.enable = true;
+  nvim-autopairs.enable = true;
+  surround.enable = true;
+  tmux-navigator.enable = true;
   # # treesitter-context.enable = true;
   # treesitter-refactor.enable = true;
   # treesitter-textobjects.enable = true;
-  # treesitter.enable = true;
+  treesitter.enable = true;
   # ts-autotag.enable = true;
   # ts-context-commentstring.enable = true;
   # typescript-tools.enable = true;
