@@ -1,15 +1,8 @@
 let
   core = [
     {
-      key = "<leader>qq";
+      key = "<leader>q";
       action = ":bdel!<cr>";
-      options = {
-        silent = true;
-      };
-    }
-    {
-      key = "<leader>qwfp";
-      action = ":q!<cr>";
       options = {
         silent = true;
       };
@@ -63,7 +56,7 @@ let
   ];
   term = [
     {
-      key = "<C-a><space>";
+      key = "<C-a>q";
       action = "<C-\\><C-n>";
       mode = "t";
       options = {
