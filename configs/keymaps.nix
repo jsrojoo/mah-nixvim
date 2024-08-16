@@ -2,13 +2,13 @@ let
   core = [
     {
       key = "<leader>q";
-      action = ":bdel!";
+      action = ":bdel!<cr>";
       options = {
         silent = true;
       };
     }
     {
-      key = "<leader>Q";
+      key = "<leader>qwfp";
       action = ":q!<cr>";
       options = {
         silent = true;
