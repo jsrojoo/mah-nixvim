@@ -1,7 +1,7 @@
 let
   core = [
     {
-      key = "<leader>q";
+      key = "<leader>qq";
       action = ":bdel!<cr>";
       options = {
         silent = true;
