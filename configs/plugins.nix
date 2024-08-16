@@ -35,7 +35,7 @@
   luasnip.enable = true;
   # markdown-preview.enable = true;
   nix.enable = true;
-  # none-ls = import ./plugins/none-ls.nix;
+  none-ls = import ./plugins/none-ls.nix;
   nvim-autopairs.enable = true;
   surround.enable = true;
   tmux-navigator.enable = true;

@@ -1,43 +1,50 @@
 let
   core = [
     {
-      action = ":q!<cr>";
       key = "<leader>q";
+      action = ":bdel!";
       options = {
         silent = true;
       };
     }
     {
-      action = ":w<cr>";
+      key = "<leader>Q";
+      action = ":q!<cr>";
+      options = {
+        silent = true;
+      };
+    }
+    {
       key = "<leader>w";
+      action = ":w<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":";
       key = ";";
+      action = ":";
       options = {
         silent = true;
       };
     }
     {
-      action = ":set foldmethod=expr<cr>";
       key = "<leader>fs";
+      action = ":set foldmethod=expr<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":set foldmethod=indent<cr>";
       key = "<leader>fi";
+      action = ":set foldmethod=indent<cr>";
       options = {
         silent = true;
       };
     }
     {
-      mode = ["n" "v"];
       key = "<leader>fd";
+      mode = ["n" "v"];
       action = "<cmd>lua vim.lsp.buf.format()<cr>";
       options = {
         silent = true;
@@ -45,8 +52,8 @@ let
       };
     }
     {
-      mode = ["n" "x" "o"];
       key = "s";
+      mode = ["n" "x" "o"];
       action = "<cmd>lua require('flash').jump()<cr>";
       options = {
         silent = true;
@@ -54,59 +61,69 @@ let
       };
     }
   ];
+  term = [
+    {
+      key = "<C-a><space>";
+      action = "<C-\\><C-n>";
+      mode = "t";
+      options = {
+        silent = true;
+      };
+    }
+  ];
   fzf = [
     {
-      action = ":FzfLua files<cr>";
       key = "<leader>fa";
+      action = ":FzfLua files<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":FzfLua grep_cword<cr>";
       key = "<leader>cw";
+      action = ":FzfLua grep_cword<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":FzfLua git_files<cr>";
       key = "<leader>fg";
+      action = ":FzfLua git_files<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":FzfLua buffers<cr>";
       key = "<leader><space>";
+      action = ":FzfLua buffers<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":FzfLua grep_curbuf<cr>";
       key = "<leader>ss";
+      action = ":FzfLua grep_curbuf<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":FzfLua grep_project<cr>";
       key = "<leader>ag";
+      action = ":FzfLua grep_project<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":FzfLua commands<cr>";
       key = "<leader>fc";
+      action = ":FzfLua commands<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":FzfLua keymaps<cr>";
       key = "<leader>fk";
+      action = ":FzfLua keymaps<cr>";
       options = {
         silent = true;
       };
@@ -114,43 +131,43 @@ let
   ];
   git_signs = [
     {
-      action = ":Gitsigns next_hunk<cr>:Gitsigns preview_hunk<cr>";
       key = "<leader>hn";
+      action = ":Gitsigns next_hunk<cr>:Gitsigns preview_hunk<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns prev_hunk<cr>:Gitsigns preview_hunk<cr>";
       key = "<leader>hp";
+      action = ":Gitsigns prev_hunk<cr>:Gitsigns preview_hunk<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns stage_hunk<cr>";
       key = "<leader>hs";
+      action = ":Gitsigns stage_hunk<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns undo_stage_hunk<cr>";
       key = "<leader>hu";
+      action = ":Gitsigns undo_stage_hunk<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns reset_hunk<cr>";
       key = "<leader>hr";
+      action = ":Gitsigns reset_hunk<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":Gitsigns toggle_current_line_blame<cr>";
       key = "<leader>tb";
+      action = ":Gitsigns toggle_current_line_blame<cr>";
       options = {
         silent = true;
       };
@@ -159,22 +176,22 @@ let
 
   fugitive = [
     {
-      action = ":G<cr>";
       key = "<leader>gs";
+      action = ":G<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":G commit<cr>";
       key = "<leader>gcm";
+      action = ":G commit<cr>";
       options = {
         silent = true;
       };
     }
     {
-      action = ":G commit --amend";
       key = "<leader>gca";
+      action = ":G commit --amend";
       options = {
         silent = true;
       };
@@ -182,6 +199,7 @@ let
   ];
 in {
   keymaps = core
+  ++ term
   ++ fzf
   ++ fugitive
   ++ git_signs;

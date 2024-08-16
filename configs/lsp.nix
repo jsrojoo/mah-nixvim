@@ -11,9 +11,10 @@
     jsonls.enable = true;
     lua-ls.enable = true;
     nixd.enable = true;
-    pylyzer.enable = true;
-    ruff-lsp.enable = true;
-    ruff.enable = true;
+    pyright.enable = true;
+    # pylyzer.enable = true;
+    # ruff-lsp.enable = true;
+    # ruff.enable = true;
     sqls.enable = true;
     tsserver.enable = true;
     yamlls.enable = true;
