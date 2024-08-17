@@ -11,8 +11,9 @@
     jsonls.enable = true;
     lua-ls.enable = true;
     nixd.enable = true;
-    pyright.enable = true;
-    # pylyzer.enable = true;
+    # pyright.enable = true;
+    pylsp.enable = true;
+    pylyzer.enable = true;
     # ruff-lsp.enable = true;
     # ruff.enable = true;
     sqls.enable = true;
