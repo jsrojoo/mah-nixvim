@@ -35,8 +35,8 @@
       colorschemes.nord.enable = true;
       clipboard.register = "unnamedplus";
 
-      plugins = import ./configs/plugins.nix;
       opts = import ./configs/opts.nix;
+      plugins = import ./configs/plugins.nix;
       inherit (import ./configs/keymaps.nix) keymaps;
       autoCmd = import ./configs/autocommands.nix;
     };

@@ -1,6 +1,6 @@
 {
   # cmp = import ./cmp.nix;
-  # endwise.enable = true;
+  endwise.enable = true;
   # flash.enable = true;
   # cmp-buffer.enable = true;
   # cmp-nvim-lsp.enable = true;
@@ -17,8 +17,6 @@
   fzf-lua.enable = true;
   gitsigns.enable = true;
   sleuth.enable = true;
-  # guess-indent.enable = true;
-  # indent-o-matic.enable = true;
   indent-blankline.enable = true;
   # # jupytext.enable = true;
   # lsp-format.enable = true;
@@ -34,7 +32,6 @@
   };
   lsp = import ./lsp.nix;
   luasnip.enable = true;
-  # markdown-preview.enable = true;
   nix.enable = true;
   none-ls = import ./plugins/none-ls.nix;
   nvim-autopairs.enable = true;
