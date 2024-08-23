@@ -1,4 +1,6 @@
 {
+	background = "light";
+
 	number = true;
 	relativenumber = true;
 
@@ -17,5 +19,7 @@
 	cursorline = true;
 	cursorcolumn = true;
 	syntax = "on";
+
+	foldmethod = "indent";
 }
 
