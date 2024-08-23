@@ -46,6 +46,14 @@
 			vim.g.smalls_jump_keys = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 		'';
 		plugins = {
+			lsp = {
+				enable = true;
+				servers = {
+					nixd = {
+						enable = true;
+					};
+				};
+			};
 			fzf-lua = {
 				enable = true;
 				settings = {
