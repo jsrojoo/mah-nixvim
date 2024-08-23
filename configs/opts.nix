@@ -21,5 +21,8 @@
 	syntax = "on";
 
 	foldmethod = "indent";
+
+	smartcase = true;
+	ignorecase = true;
 }
 
