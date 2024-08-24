@@ -14,7 +14,7 @@
 	undofile = true;
 
 	termguicolors = true;
-	scrolloff = 8;
+	scrolloff = 9999;
 
 	cursorline = true;
 	cursorcolumn = true;
@@ -24,5 +24,7 @@
 
 	smartcase = true;
 	ignorecase = true;
+
+	signcolumn = "yes:2";
 }
 

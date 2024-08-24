@@ -1,5 +1,5 @@
 {
-	description = "A very basic flake";
+	description = "mah-nixvim";
 
 	inputs.nixvim.url = "github:nix-community/nixvim";
 	inputs.nixpkgs.url = "github:NixOS/nixpkgs";
