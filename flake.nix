@@ -134,7 +134,7 @@
 		}
 		{
 			mode = "n";
-			key = "<leader>fa";
+			key = "<leader>fg";
 			action = ":FzfLua git_files<cr>";
 			options = { silent = true; };
 		}
