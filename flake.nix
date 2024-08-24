@@ -40,6 +40,51 @@
 				];
 
 				plugins = {
+          cmp = {
+            enable = true;
+            cmdline = {
+              "/" = {
+                mapping = {
+                  __raw = "cmp.mapping.preset.cmdline()";
+                };
+                sources = [
+                  {
+                    name = "buffer";
+                  }
+                ];
+              };
+              ":" = {
+                mapping = {
+                  __raw = "cmp.mapping.preset.cmdline()";
+                };
+                sources = [
+                  {
+                    name = "path";
+                  }
+                  {
+                    name = "cmdline";
+                    option = {
+                      ignore_cmds = [
+                        "Man"
+                        "!"
+                      ];
+                    };
+                  }
+                ];
+              };
+            };
+            settings = {
+              mappings = {
+                "<C-Space>" = "cmp.mapping.complete()";
+                "<C-u>" = "cmp.mapping.scroll_docs(-4)";
+                "<esc>" = "cmp.mapping.close()";
+                "<C-d>" = "cmp.mapping.scroll_docs(4)";
+                "<tab>" = "cmp.mapping.confirm({ select = true })";
+                "<C-k>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+                "<C-j>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+              };
+            };
+          };
 					lsp = {
 						enable = true;
 						servers = {

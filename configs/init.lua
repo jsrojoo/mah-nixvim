@@ -44,6 +44,7 @@ opt.textwidth = 75
 opt.scrolloff = 999
 opt.cursorline = true
 opt.cursorcolumn = true
+opt.pumheight = 1;
 
 opt.list = true
 opt.listchars = {
