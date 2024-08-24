@@ -47,7 +47,7 @@ opt.cursorcolumn = true
 
 opt.list = true
 opt.listchars = {
-tab = '│·',
+tab = '  ',
 extends = '⟩',
 precedes = '⟨',
 trail = '·'
